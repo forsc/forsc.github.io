@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Hello!
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is <strong>Rahul</strong> & I am from the beautiful city of Kolkata(India)
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I have a master degree in <strong>Statisics</strong> & around <strong>5 years</strong> of experince in <strong>Data Science & AI</strong>.
 
-What else do you need?
+I love working with R(<3) & python
 
-### My story
+I have an interest in computer vision, building automated tools around statistical concepts!
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I love videogames,Football(Chelsea!!!) & teaching machines how to learn! 
+
+Want to know more about what i worked on? Shoot me a mail on <a target="_blank" href="mailto:rahul.bnghs@gmail.com">here</a>. Or you could visit my small project Portfolio :)
