@@ -10,7 +10,7 @@ I have a master degree in <strong>Statisics</strong> & around <strong>6 years</s
 
 I love working with R(<3) & python
 
-I have an interest in computer vision, building automated tools around statistical concepts!
+I have interest in computer vision, building automated tools around statistical concepts!
 
 I love videogames,Football(Chelsea!!!) & teaching machines how to learn! 
 
