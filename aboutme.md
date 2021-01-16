@@ -6,7 +6,7 @@ subtitle: Hello!
 
 My name is <strong>Rahul</strong> & I am from the beautiful city of Kolkata(India)
 
-I have a master degree in <strong>Statisics</strong> & around <strong>5 years</strong> of experince in <strong>Data Science & AI</strong>.
+I have a master degree in <strong>Statisics</strong> & around <strong>6 years</strong> of experince in <strong>Data Science & AI</strong>.
 
 I love working with R(<3) & python
 
