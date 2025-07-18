@@ -49,8 +49,11 @@ portfolio/
 ├── styles.css          # All CSS styling
 ├── script.js           # JavaScript functionality
 ├── blog-reader.js      # Blog system for markdown files
+├── blog-data.js        # Blog posts data (GitHub Pages compatible)
+├── convert-blog.py     # Convert markdown to JavaScript (optional)
 ├── README.md           # This file
-└── blog/               # Blog posts directory
+└── blog/               # Blog posts directory (for reference)
+    ├── index.md        # Blog management guide
     ├── rag-applications-fastapi.md
     ├── recommendation-systems-scale.md
     └── distributed-training-ray.md
@@ -229,11 +232,29 @@ To add Google Analytics:
 3. **JavaScript not working**: Check browser console for errors
 4. **Mobile layout issues**: Test responsiveness with browser dev tools
 
+### Blog System Issues:
+
+1. **Blog posts not loading on GitHub Pages**: 
+   - **Problem**: CORS restrictions prevent fetching `.md` files
+   - **Solution**: Use `blog-data.js` (already included) instead of markdown files
+   - **Status**: ✅ Fixed - blog posts are embedded as JavaScript data
+
+2. **Adding new blog posts**:
+   - **Option 1**: Edit `blog-data.js` directly (quick)
+   - **Option 2**: Use `convert-blog.py` to convert markdown files
+   - **Option 3**: Add posts to `window.blogData` array manually
+
+3. **Blog content not displaying**:
+   - Check browser console for errors
+   - Ensure `blog-data.js` loads before `blog-reader.js`
+   - Verify `window.blogData` exists in browser dev tools
+
 ### GitHub Pages Specific:
 
 1. **404 Error**: Ensure `index.html` is in the root directory
 2. **Changes not updating**: GitHub Pages can take a few minutes to update
 3. **Custom domain issues**: Check DNS settings and repository settings
+4. **Blog CORS errors**: Use the JavaScript data approach (already implemented)
 
 ## 📄 License
 

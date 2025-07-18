@@ -13,12 +13,31 @@ class BlogReader {
     }
 
     async init() {
-        await this.loadAllPosts();
+        this.loadAllPosts();
         this.updateBlogCards();
         this.setupEventListeners();
     }
 
-    async loadAllPosts() {
+    loadAllPosts() {
+        // Use embedded blog data to avoid CORS issues on GitHub Pages
+        if (window.blogData && window.blogData.length > 0) {
+            this.posts = window.blogData.map(post => ({
+                ...post,
+                htmlContent: this.markdownToHtml(post.content)
+            }));
+            console.log(`Loaded ${this.posts.length} blog posts from embedded data`);
+        } else {
+            console.warn('Blog data not found. Make sure blog-data.js is loaded.');
+            // Fallback: try to load from markdown files (will fail on GitHub Pages due to CORS)
+            this.loadMarkdownPosts();
+        }
+        
+        // Sort posts by date (newest first)
+        this.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
+
+    async loadMarkdownPosts() {
+        // Fallback method for local development
         for (const filename of this.blogList) {
             try {
                 const response = await fetch(`blog/${filename}`);
@@ -31,9 +50,6 @@ class BlogReader {
                 console.warn(`Could not load blog post: ${filename}`, error);
             }
         }
-        
-        // Sort posts by date (newest first)
-        this.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
     }
 
     parseMarkdown(content, filename) {
