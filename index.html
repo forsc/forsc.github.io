@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Bhowmick - Machine Learning Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Rahul Bhowmick</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">Rahul Bhowmick</span>
+                </h1>
+                <h2 class="hero-subtitle">Machine Learning Engineer</h2>
+                <p class="hero-description">
+                    Passionate ML Engineer with 10+ years of experience in developing AI/ML solutions, 
+                    recommendation systems, and data science applications across fintech, pharma, and consumer goods industries.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:rahul.bnghs@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/rahulbhow" class="social-link" aria-label="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/forsc" class="social-link" aria-label="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Machine Learning Engineer currently working at AB-InBev, where I develop cutting-edge 
+                        AI solutions that serve thousands of users. My expertise spans across generative AI, 
+                        recommendation systems, and advanced analytics.
+                    </p>
+                    <p>
+                        With a Master's degree in Statistics and extensive experience in data science, I've 
+                        successfully delivered ML solutions across diverse industries including beverage, 
+                        pharmaceutical, consulting, and financial services.
+                    </p>
+                </div>
+                <div class="about-education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>M.Sc. in Statistics</h4>
+                            <span class="education-date">2012 - 2014</span>
+                        </div>
+                        <p class="education-school">University of Kalyani, West Bengal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Machine Learning Engineer</h3>
+                            <span class="timeline-date">Dec 2022 - Present</span>
+                        </div>
+                        <h4 class="timeline-company">AB-InBev, Bengaluru</h4>
+                        <ul class="timeline-achievements">
+                            <li>Developed an internal GEN AI RAG application integrating SQL, internet, vector DB, and feedback loops using FastAPI, agno, OpenAI Agent SDK, and Kubernetes, serving ~5000 users</li>
+                            <li>Engineered recommendation algorithms for BEES application including promotions, upselling, and reorder prediction using XGBoost, LightFM, and LGBM</li>
+                            <li>Built and maintained Python packages for custom recommendation algorithms ensuring scalable and reusable code</li>
+                            <li>Utilized Ray for distributed model training on Databricks clusters, improving training efficiency by 80%</li>
+                            <li>Led multiple GitHub repositories with automated code quality checks, semantic versioning, and testing pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Analyst</h3>
+                            <span class="timeline-date">Feb 2021 - Dec 2022</span>
+                        </div>
+                        <h4 class="timeline-company">Novartis, Remote</h4>
+                        <ul class="timeline-achievements">
+                            <li>Developed and deployed CatBoost model to predict UK drug approvals with custom Dash dashboard</li>
+                            <li>Created price range prediction tool for new drugs based on historical market data</li>
+                            <li>Developed text and voice analysis tool using Whisper, BERT, and custom knowledge graph for doctor-patient conversations</li>
+                            <li>Engineered custom Q&A tool with RoBERTa achieving 80% top-5 accuracy over 1000 documents</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Analyst</h3>
+                            <span class="timeline-date">Apr 2018 - Feb 2021</span>
+                        </div>
+                        <h4 class="timeline-company">EY, Bengaluru</h4>
+                        <ul class="timeline-achievements">
+                            <li>Analyzed employee satisfaction by integrating survey and system usage data to identify performance bottlenecks</li>
+                            <li>Developed web app for contract document analysis using Azure and MS OCR API with insightful visualizations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Team Lead, Fraud Analytics</h3>
+                            <span class="timeline-date">May 2017 - Apr 2018</span>
+                        </div>
+                        <h4 class="timeline-company">Standard Chartered, Bengaluru</h4>
+                        <ul class="timeline-achievements">
+                            <li>Led fraud detection efforts for debit and credit cards using transaction data analysis</li>
+                            <li>Built fraud detection models to identify skimming and common fraud patterns, preventing large-scale fraud attempts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Executive, Data Science</h3>
+                            <span class="timeline-date">Mar 2015 - May 2017</span>
+                        </div>
+                        <h4 class="timeline-company">Nielsen, Vadodara</h4>
+                        <ul class="timeline-achievements">
+                            <li>Predicted market share shifts using weighted bootstrap and quantile regression models</li>
+                            <li>Analyzed stock and sales for FMCG product categories to establish relationships, reducing human error in data collection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>ML/AI Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Hugging Face Transformers</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">LightFM</span>
+                        <span class="skill-tag">LGBM</span>
+                        <span class="skill-tag">CatBoost</span>
+                        <span class="skill-tag">OpenAI Agents</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Development Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter Notebooks</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cloud & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Azure ML</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Dash</span>
+                        <span class="skill-tag">Ray</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="blog-grid">
+                <!-- Blog posts will be dynamically loaded here by blog-reader.js -->
+                <!-- Fallback static cards in case markdown files don't load -->
+                <article class="blog-card fallback-card">
+                    <div class="blog-header">
+                        <div class="blog-category">AI/ML</div>
+                        <div class="blog-date">Oct 22, 2024</div>
+                    </div>
+                    <h3 class="blog-title">From BERT to Whisper: Building Multi-Modal AI for Healthcare Analytics</h3>
+                    <p class="blog-excerpt">
+                        Implementing text and voice analysis tools for doctor-patient conversations using state-of-the-art 
+                        transformer models. Lessons learned from deploying AI in sensitive healthcare environments.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">BERT</span>
+                        <span class="blog-tag">Whisper</span>
+                        <span class="blog-tag">Healthcare</span>
+                        <span class="blog-tag">NLP</span>
+                    </div>
+                    <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="blog-card fallback-card">
+                    <div class="blog-header">
+                        <div class="blog-category">Career</div>
+                        <div class="blog-date">Oct 5, 2024</div>
+                    </div>
+                    <h3 class="blog-title">Transitioning from Data Science to ML Engineering: A Practical Guide</h3>
+                    <p class="blog-excerpt">
+                        My journey from traditional data analysis to building production ML systems. Key skills, tools, 
+                        and mindset shifts needed to succeed as an ML Engineer in modern tech companies.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Career</span>
+                        <span class="blog-tag">ML Engineering</span>
+                        <span class="blog-tag">Data Science</span>
+                        <span class="blog-tag">Tips</span>
+                    </div>
+                    <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="blog-card fallback-card">
+                    <div class="blog-header">
+                        <div class="blog-category">Technical</div>
+                        <div class="blog-date">Sep 18, 2024</div>
+                    </div>
+                    <h3 class="blog-title">Fraud Detection at Scale: Machine Learning Patterns That Actually Work</h3>
+                    <p class="blog-excerpt">
+                        Real-world fraud detection strategies from my experience at Standard Chartered. Decision trees, 
+                        ensemble methods, and the importance of feature engineering in financial ML applications.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Fraud Detection</span>
+                        <span class="blog-tag">Decision Trees</span>
+                        <span class="blog-tag">FinTech</span>
+                        <span class="blog-tag">Security</span>
+                    </div>
+                    <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+            
+            <div class="blog-cta">
+                <h3>Want to read more?</h3>
+                <p>Follow me on Medium or LinkedIn for regular updates on ML, AI, and data science.</p>
+                <div class="blog-social">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fab fa-medium"></i> Follow on Medium
+                    </a>
+                    <a href="https://linkedin.com/in/rahulbhow" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in discussing new opportunities, collaborations, or just having a chat about machine learning and data science.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:rahul.bnghs@gmail.com">rahul.bnghs@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91-9836534899 / +91-7980498265</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bengaluru, Karnataka, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/rahulbhow" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/forsc" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rahul Bhowmick. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog-reader.js"></script>
+</body>
+</html> 
